@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "Kafy",
+    "slug": "portal",
+    "owner": "supplymeapp",
+    "privacy": "hidden",
+    "scheme": "supplyme",
+    "version": "3.0.3",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "extra": {
+      "amplitudeApiKey": "9bac9942508f00765c9813deaaff891e",
+      "googleApiKeyIOs": "AIzaSyBbVfqzgZDzeqB7BfMPN9MlRdMb7hPRYHY",
+      "googleApiKeyAndroid": "AIzaSyBcVEMN9Vey28wWRaGQzx4GR5pz6X6zkf4",
+      "eas": {
+        "projectId": "77d21dad-ef02-4b84-8236-30c7dad084de"
+      }
+    },
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#D70216"
+    },
+    "updates": {
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 120000,
+      "url": "https://u.expo.dev/77d21dad-ef02-4b84-8236-30c7dad084de"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "ae.supplyme.portal",
+      "buildNumber": "3.0.3",
+      "supportsTablet": false,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBbVfqzgZDzeqB7BfMPN9MlRdMb7hPRYHY"
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take a picture of verification documents for the approval process.",
+        "NSPhotoLibraryAddUsageDescription": "This app uses the camera to upload verification documents for the approval process.",
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to identify your delivery address."
+      }
+    },
+    "android": {
+      "package": "ae.supplyme.portal",
+      "versionCode": 46,
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#D70216"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBcVEMN9Vey28wWRaGQzx4GR5pz6X6zkf4"
+        }
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "supplyme",
+            "project": "supplyme-consumer-app"
+          }
+        }
+      ]
+    }
+  }
+}

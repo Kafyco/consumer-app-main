@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312556391927",
+    "project_id": "supplyme-app",
+    "storage_bucket": "supplyme-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312556391927:android:d193d96f18c23f9bf4f2f2",
+        "android_client_info": {
+          "package_name": "ae.supplyme.portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312556391927-3c41milhao5d46p76dvjcrhpbmg7fiuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcVEMN9Vey28wWRaGQzx4GR5pz6X6zkf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312556391927-3c41milhao5d46p76dvjcrhpbmg7fiuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
